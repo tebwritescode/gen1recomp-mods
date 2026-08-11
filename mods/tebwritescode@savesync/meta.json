@@ -9,7 +9,7 @@
   ],
   "repo": "https://github.com/tebwritescode/savesync",
   "github": "tebwritescode/savesync",
-  "summary": "Automatic cross-device cloud saves on storage you own: your own GitHub gist, Dropbox, or a self-hosted server. Conflicts are never silently overwritten.",
+  "summary": "Your save follows you to every device. Sign in once - the storage is your own GitHub, Dropbox or server, never someone else's.",
   "tags": [
     "saves",
     "backup",
