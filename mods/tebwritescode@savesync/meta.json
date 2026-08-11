@@ -1,0 +1,29 @@
+{
+  "id": "savesync",
+  "title": "SaveSync",
+  "author": "tebwritescode",
+  "version": "1.5.0",
+  "categories": [
+    "TOOL",
+    "QOL"
+  ],
+  "repo": "https://github.com/tebwritescode/savesync",
+  "github": "tebwritescode/savesync",
+  "summary": "Automatic cross-device cloud saves on storage you own: your own GitHub gist, Dropbox, or a self-hosted server. Conflicts are never silently overwritten.",
+  "tags": [
+    "saves",
+    "backup",
+    "cloud",
+    "sync",
+    "online",
+    "tools"
+  ],
+  "license": "MIT",
+  "api": 2,
+  "permissions": [
+    "network",
+    "filesystem",
+    "engine_internals"
+  ],
+  "automatic_version_check": true
+}

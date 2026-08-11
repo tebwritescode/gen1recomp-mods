@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-11T21:00:49Z",
+  "count": 2,
+  "categories": [
+    "CONTENT",
+    "GAMEPLAY",
+    "QOL",
+    "TOOL"
+  ],
+  "mods": [
+    {
+      "folder": "tebwritescode@gen1mmo",
+      "id": "gen1mmo",
+      "title": "Gen1MMO",
+      "author": "tebwritescode",
+      "version": "1.5.1",
+      "categories": [
+        "GAMEPLAY",
+        "CONTENT",
+        "QOL"
+      ],
+      "repo": "https://github.com/tebwritescode/gen1mmo",
+      "summary": "Other trainers live in your own save: chat, trainer cards, friends - one official server, accounts with no email.",
+      "tags": [
+        "online",
+        "multiplayer",
+        "chat",
+        "friends",
+        "customisation",
+        "privacy",
+        "social"
+      ],
+      "github": "tebwritescode/gen1mmo",
+      "license": "MIT",
+      "permissions": [
+        "network"
+      ],
+      "api": 2,
+      "profile": "content",
+      "description_url": "data/mods/tebwritescode@gen1mmo/description.md",
+      "thumbnail": "data/mods/tebwritescode@gen1mmo/thumbnail.png",
+      "update_check": "ok",
+      "latest": {
+        "version": "1.5.1",
+        "tag": "v1.5.1",
+        "name": "Gen1MMO 1.5.1",
+        "prerelease": false,
+        "published_at": "2026-08-11T20:04:54Z",
+        "zip": {
+          "name": "gen1mmo-1.5.1.zip",
+          "url": "https://github.com/tebwritescode/gen1mmo/releases/download/v1.5.1/gen1mmo-1.5.1.zip",
+          "size": 384025
+        }
+      },
+      "last_release": "2026-08-11"
+    },
+    {
+      "folder": "tebwritescode@savesync",
+      "id": "savesync",
+      "title": "SaveSync",
+      "author": "tebwritescode",
+      "version": "1.5.0",
+      "categories": [
+        "TOOL",
+        "QOL"
+      ],
+      "repo": "https://github.com/tebwritescode/savesync",
+      "github": "tebwritescode/savesync",
+      "summary": "Automatic cross-device cloud saves on storage you own: your own GitHub gist, Dropbox, or a self-hosted server. Conflicts are never silently overwritten.",
+      "tags": [
+        "saves",
+        "backup",
+        "cloud",
+        "sync",
+        "online",
+        "tools"
+      ],
+      "license": "MIT",
+      "api": 2,
+      "permissions": [
+        "network",
+        "filesystem",
+        "engine_internals"
+      ],
+      "automatic_version_check": true,
+      "description_url": "data/mods/tebwritescode@savesync/description.md",
+      "thumbnail": "data/mods/tebwritescode@savesync/thumbnail.png",
+      "update_check": "ok",
+      "latest": {
+        "version": "1.5.0",
+        "tag": "v1.5.0",
+        "name": "SaveSync v1.5.0",
+        "prerelease": false,
+        "published_at": "2026-08-11T20:48:25Z",
+        "zip": {
+          "name": "savesync-1.5.0.zip",
+          "url": "https://github.com/tebwritescode/savesync/releases/download/v1.5.0/savesync-1.5.0.zip",
+          "size": 62243
+        }
+      },
+      "last_release": "2026-08-11"
+    }
+  ]
+}

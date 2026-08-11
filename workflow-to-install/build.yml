@@ -1,0 +1,48 @@
+name: Build index and deploy Pages
+
+# Nightly, because a mod's version lives in its own repo's releases: without a
+# scheduled rebuild this feed would freeze at whatever was true the day it was
+# last pushed, and every release would need a commit here.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      # GITHUB_TOKEN lifts the API limit from 60/h to 5000/h. Without it a
+      # rebuild starts failing the moment there are more than a few mods.
+      - run: node scripts/build.mjs --releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit the rebuilt feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data
+          git diff --staged --quiet || git commit -m "Rebuild feed [skip ci]"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+      - id: deployment
+        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
