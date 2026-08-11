@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-11T21:36:29Z",
+  "generated_at": "2026-08-11T21:37:58Z",
   "count": 2,
   "categories": [
     "CONTENT",
@@ -94,8 +94,8 @@
         "prerelease": false,
         "published_at": "2026-08-11T21:36:20Z",
         "zip": {
-          "name": "ss160.zip",
-          "url": "https://github.com/tebwritescode/savesync/releases/download/v1.6.0/ss160.zip",
+          "name": "savesync-1.6.0.zip",
+          "url": "https://github.com/tebwritescode/savesync/releases/download/v1.6.0/savesync-1.6.0.zip",
           "size": 65950
         }
       },
