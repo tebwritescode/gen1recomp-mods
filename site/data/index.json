@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-11T21:39:07Z",
+  "generated_at": "2026-08-11T22:03:55Z",
   "count": 2,
   "categories": [
     "CONTENT",
@@ -60,14 +60,14 @@
       "id": "savesync",
       "title": "SaveSync",
       "author": "tebwritescode",
-      "version": "1.6.0",
+      "version": "1.6.1",
       "categories": [
         "TOOL",
         "QOL"
       ],
       "repo": "https://github.com/tebwritescode/savesync",
       "github": "tebwritescode/savesync",
-      "summary": "Your save follows you to every device. Sign in once - the storage is your own GitHub, Dropbox or server, never someone else's.",
+      "summary": "Automatic cross-device saves for Gen1Recomp - your save follows you to every device you play on, stored on free space that belongs to you.",
       "tags": [
         "saves",
         "backup",
@@ -88,15 +88,15 @@
       "thumbnail": "data/mods/tebwritescode@savesync/thumbnail.png",
       "update_check": "ok",
       "latest": {
-        "version": "1.6.0",
-        "tag": "v1.6.0",
-        "name": "SaveSync v1.6.0",
+        "version": "1.6.1",
+        "tag": "v1.6.1",
+        "name": "SaveSync v1.6.1",
         "prerelease": false,
-        "published_at": "2026-08-11T21:36:20Z",
+        "published_at": "2026-08-11T22:03:56Z",
         "zip": {
-          "name": "savesync-1.6.0.zip",
-          "url": "https://github.com/tebwritescode/savesync/releases/download/v1.6.0/savesync-1.6.0.zip",
-          "size": 65950
+          "name": "savesync-1.6.1.zip",
+          "url": "https://github.com/tebwritescode/savesync/releases/download/v1.6.1/savesync-1.6.1.zip",
+          "size": 65851
         }
       },
       "last_release": "2026-08-11"
