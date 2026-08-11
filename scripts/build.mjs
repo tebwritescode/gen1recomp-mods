@@ -87,11 +87,13 @@ mods.sort((a, b) => a.id.localeCompare(b.id));
 // Copy descriptions and thumbnails next to the feed so the launcher's card
 // can fetch them with a relative path from the same base.
 for (const d of dirs) {
-  const out = join('site', 'data', 'mods', d.name);
+  for (const root of ['site', 'docs']) {
+  const out = join(root, 'data', 'mods', d.name);
   mkdirSync(out, { recursive: true });
   for (const f of ['description.md', 'thumbnail.png']) {
     const src = join('mods', d.name, f);
     if (existsSync(src)) writeFileSync(join(out, f), readFileSync(src));
+  }
   }
 }
 
@@ -102,7 +104,14 @@ const index = {
   categories: [...new Set(mods.flatMap((m) => m.categories || []))].sort(),
   mods,
 };
-mkdirSync('site/data', { recursive: true });
-writeFileSync('site/data/index.json', JSON.stringify(index, null, 2) + '\n');
+// Written to BOTH roots on purpose. The engine resolves "owner/repo" to a
+// Pages URL and falls back to raw.githubusercontent's site/ path, and Pages
+// served from a branch only accepts / or /docs -- so site/ satisfies the
+// fallback and docs/ satisfies Pages. One build, both URLs live.
+for (const root of ['site', 'docs']) {
+  mkdirSync(root + '/data', { recursive: true });
+  writeFileSync(root + '/data/index.json',
+    JSON.stringify(index, null, 2) + '\n');
+}
 console.log(`wrote site/data/index.json - ${mods.length} mod(s)`
   + (withReleases ? ', releases resolved' : ' (NO release info; pass --releases)'));
