@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-12T00:42:36Z",
+  "generated_at": "2026-08-12T01:29:28Z",
   "count": 2,
   "categories": [
     "CONTENT",
@@ -60,7 +60,7 @@
       "id": "savesync",
       "title": "SaveSync",
       "author": "tebwritescode",
-      "version": "1.9.0",
+      "version": "1.11.1",
       "categories": [
         "TOOL",
         "QOL"
@@ -88,15 +88,15 @@
       "thumbnail": "data/mods/tebwritescode@savesync/thumbnail.png",
       "update_check": "ok",
       "latest": {
-        "version": "1.9.0",
-        "tag": "v1.9.0",
-        "name": "SaveSync v1.9.0",
+        "version": "1.11.1",
+        "tag": "v1.11.1",
+        "name": "SaveSync 1.11.1",
         "prerelease": false,
-        "published_at": "2026-08-12T00:27:34Z",
+        "published_at": "2026-08-12T01:28:49Z",
         "zip": {
-          "name": "savesync-1.9.0.zip",
-          "url": "https://github.com/tebwritescode/savesync/releases/download/v1.9.0/savesync-1.9.0.zip",
-          "size": 70089
+          "name": "savesync-1.11.1.zip",
+          "url": "https://github.com/tebwritescode/savesync/releases/download/v1.11.1/savesync-1.11.1.zip",
+          "size": 73019
         }
       },
       "last_release": "2026-08-12"
