@@ -1,14 +1,64 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-12T02:50:30Z",
-  "count": 2,
+  "generated_at": "2026-08-18T19:11:56Z",
+  "count": 3,
   "categories": [
     "CONTENT",
     "GAMEPLAY",
     "QOL",
-    "TOOL"
+    "TOOL",
+    "UI"
   ],
   "mods": [
+    {
+      "folder": "tebwritescode@battle_pad",
+      "id": "battle_pad",
+      "title": "BattlePad",
+      "author": "tebwritescode",
+      "version": "0.6.1",
+      "categories": [
+        "UI",
+        "QOL"
+      ],
+      "repo": "https://github.com/tebwritescode/battlepad",
+      "summary": "Shortcuts for the battle menu: moves and battle actions mapped straight to your controller.",
+      "tags": [
+        "controller",
+        "gamepad",
+        "battle",
+        "ui",
+        "shortcuts",
+        "gold",
+        "gen2"
+      ],
+      "github": "tebwritescode/battlepad",
+      "license": "MIT",
+      "permissions": [
+        "engine_internals",
+        "filesystem"
+      ],
+      "conflicts": [
+        "USEFUL_BATTLE_CAM"
+      ],
+      "api": 2,
+      "profile": "content",
+      "description_url": "data/mods/tebwritescode@battle_pad/description.md",
+      "thumbnail": "data/mods/tebwritescode@battle_pad/thumbnail.png",
+      "update_check": "ok",
+      "latest": {
+        "version": "0.6.1",
+        "tag": "v0.6.1",
+        "name": "0.6.1",
+        "prerelease": false,
+        "published_at": "2026-08-18T19:07:24Z",
+        "zip": {
+          "name": "battle_pad-0.6.1.zip",
+          "url": "https://github.com/tebwritescode/battlepad/releases/download/v0.6.1/battle_pad-0.6.1.zip",
+          "size": 111929
+        }
+      },
+      "last_release": "2026-08-18"
+    },
     {
       "folder": "tebwritescode@gen1mmo",
       "id": "gen1mmo",
