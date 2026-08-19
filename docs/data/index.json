@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-18T20:11:11Z",
+  "generated_at": "2026-08-19T06:12:56Z",
   "count": 3,
   "categories": [
     "CONTENT",
@@ -15,7 +15,7 @@
       "id": "battle_pad",
       "title": "BattlePad",
       "author": "tebwritescode",
-      "version": "0.6.2",
+      "version": "0.6.3",
       "categories": [
         "UI",
         "QOL"
@@ -46,18 +46,18 @@
       "thumbnail": "data/mods/tebwritescode@battle_pad/thumbnail.png",
       "update_check": "ok",
       "latest": {
-        "version": "0.6.2",
-        "tag": "v0.6.2",
-        "name": "0.6.2",
+        "version": "0.6.3",
+        "tag": "v0.6.3",
+        "name": "0.6.3",
         "prerelease": false,
-        "published_at": "2026-08-18T20:10:16Z",
+        "published_at": "2026-08-19T06:12:23Z",
         "zip": {
-          "name": "battle_pad-0.6.2.zip",
-          "url": "https://github.com/tebwritescode/battlepad/releases/download/v0.6.2/battle_pad-0.6.2.zip",
-          "size": 113681
+          "name": "battle_pad-0.6.3.zip",
+          "url": "https://github.com/tebwritescode/battlepad/releases/download/v0.6.3/battle_pad-0.6.3.zip",
+          "size": 113911
         }
       },
-      "last_release": "2026-08-18"
+      "last_release": "2026-08-19"
     },
     {
       "folder": "tebwritescode@gen1mmo",
